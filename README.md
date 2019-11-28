@@ -2,13 +2,19 @@
 
 Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
-* [![Shiny](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=shiny/APPR-2019-20/projekt.Rmd) Shiny
-* [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=rstudio) RStudio
+* [![Shiny](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/admira05/APPR-2019-20/master?urlpath=shiny/APPR-2019-20/projekt.Rmd) Shiny
+* [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/admira05/APPR-2019-20/master?urlpath=rstudio) RStudio
 
 ## Tematika
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal.
-Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+V projektu bom analizirala preseljevanje slovencev od leta 2000 do 2018. Analizirala bom podatke glede na priseljevanje in odseljevanje v tujino oz. v druge regije. Posebaj bom analizrala delez moskega oz zenskega prebivalstva, ki se je preselilo. 
+Podatke sem pridobila na SURS-u. 
+
+Uporabila bom 4 tabele: 
+
+oblike vhodnih podatkov
+
+
 
 ## Program
 
