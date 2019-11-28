@@ -7,12 +7,36 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
 ## Tematika
 
-V projektu bom analizirala preseljevanje slovencev od leta 2000 do 2018. Analizirala bom podatke glede na priseljevanje in odseljevanje v tujino oz. v druge regije. Posebaj bom analizrala delez moskega oz zenskega prebivalstva, ki se je preselilo. 
-Podatke sem pridobila na SURS-u. 
+V projektu bom analizirala preseljevanje Slovencev od leta 2000 do 2018. Predstavila bom meddržavne in regijske selitve glede na spol, potem bom analizirala tudi preseljevanje glede na starost in izobrazbo. Podatke sem pridobila na SURS-u.
 
-Uporabila bom 4 tabele: 
+Uporbila bom 5.tabel:
 
-oblike vhodnih podatkov
+1.TABELA: Preseljevanje znotraj Slovenije oz. po kohezijskih regijah 
+          1. stolpec: letnice
+          2. stolpec: regije
+          3. stolpec: spol
+          4. stolpec: število ljudi, ki se je vselilo v to regijo
+          5. stolpec: število ljudi, ki se je odselilo iz te regije
+          
+2.TABELA: Meddržavne selitve(priseljevanje v Slovenijo)
+          1. stolpec: letnice
+          2. stolpec: država predhodnega bivališča
+          3. stolpec: spol
+          4. stolpec: število ljudi, ki se je preselilo v Slovenijo
+          
+3.TABELA: Meddržavne selitve(odseljevanje iz Slovenije)
+          Enaka tabela kot zgornja, le da so podatki po odseljevanju. 
+          
+4.TABELA: Meddržavne selitve glede na namen selitve
+          Cilj te tabele je predstaviti različne namene priseljevanja v Slovenijo (zaposlitev,             sezonsko delo, združitev z družino, študij, drugo)
+          1. stolpec: letnice
+          2. stolpec: država predhodnega bivališča
+          4. stolpec: starostna omejitev
+          5. stolpec: namen selitve
+          6. stolpec: vrednost
+          
+5.TABELA: Meddržavne selitve glede na namen selitve 
+          Enaka tabela kot zgoraj, le da so podatki o različnih namenih prebivalstva, ki se                odseljuje iz Slovenije.
 
 
 
