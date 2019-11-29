@@ -7,12 +7,12 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 
 ## Tematika
 
-V projektu bom analizirala preseljevanje Slovencev od leta 2000 do 2018. Predstavila bom meddržavne in regijske selitve glede na spol, potem bom analizirala tudi preseljevanje glede na starost in izobrazbo. Podatke sem pridobila na SURS-u.
+V projektu bom analizirala preseljevanje Slovencev od leta 2000 do 2018. Predstavila bom meddržavne in regijske selitve glede na spol, potem bom analizirala tudi preseljevanje glede na starost in namen. Podatke sem pridobila na SURS-u.
 
-Uporbila bom 5.tabel:
+Uporabila bom 5.tabel:
 
 1.TABELA: Preseljevanje znotraj Slovenije oz. po kohezijskih regijah 
-          1. stolpec: letnice
+* stolpec 1: letnice
           2. stolpec: regije
           3. stolpec: spol
           4. stolpec: število ljudi, ki se je vselilo v to regijo
