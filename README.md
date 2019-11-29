@@ -11,31 +11,22 @@ V projektu bom analizirala preseljevanje Slovencev od leta 2000 do 2018. Predsta
 
 Uporabila bom 5.tabel:
 
-1.TABELA: Preseljevanje znotraj Slovenije oz. po kohezijskih regijah 
-* stolpec 1: letnice
-          2. stolpec: regije
-          3. stolpec: spol
-          4. stolpec: število ljudi, ki se je vselilo v to regijo
-          5. stolpec: število ljudi, ki se je odselilo iz te regije
+* TABELA 1: Preseljevanje znotraj Slovenije oz. po kohezijskih regijah 
+            (stolpci: letnice, regije, spol, število ljudi, ki se je vselilo v to regijo in                   število ljudi, ki se je odselilo iz te regije
           
-2.TABELA: Meddržavne selitve(priseljevanje v Slovenijo)
-          1. stolpec: letnice
-          2. stolpec: država predhodnega bivališča
-          3. stolpec: spol
-          4. stolpec: število ljudi, ki se je preselilo v Slovenijo
+* TABELA 2: Meddržavne selitve - priseljevanje v Slovenijo 
+            (stolpci: letnice, država predhodnega bivališča, spol, število ljudi, ki se je                    preselilo v Slovenijo)
+           
           
-3.TABELA: Meddržavne selitve(odseljevanje iz Slovenije)
+* TABELA 3: Meddržavne selitve - odseljevanje iz Slovenije
           Enaka tabela kot zgornja, le da so podatki po odseljevanju. 
           
-4.TABELA: Meddržavne selitve glede na namen selitve
-          Cilj te tabele je predstaviti različne namene priseljevanja v Slovenijo (zaposlitev,             sezonsko delo, združitev z družino, študij, drugo)
-          1. stolpec: letnice
-          2. stolpec: država predhodnega bivališča
-          4. stolpec: starostna omejitev
-          5. stolpec: namen selitve
-          6. stolpec: vrednost
+* TABELA 4: Meddržavne selitve glede na namen selitve
+          Cilj te tabele je predstaviti različne namene priseljevanja v Slovenijo (zaposlitev,             sezonsko delo, združitev z družino, študij, drugo) glede na starostno omejitev.
+          (stolpci: letnice, država predhodnega bivališča, starostna omejitev, namet selitve, število ljudi, ki se je preselilo)
           
-5.TABELA: Meddržavne selitve glede na namen selitve 
+          
+* TABELA 5: Meddržavne selitve glede na namen selitve 
           Enaka tabela kot zgoraj, le da so podatki o različnih namenih prebivalstva, ki se                odseljuje iz Slovenije.
 
 
