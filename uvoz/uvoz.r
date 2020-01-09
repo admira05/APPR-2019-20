@@ -3,32 +3,37 @@
 sl <- locale("sl", decimal_mark=",", grouping_mark=".")
 
 
-
-data <- read_csv2("podatki/tujci.namen.csv",locale=locale(encoding="Windows-1250"), skip = 2, na=c("", "...", "z") ) %>%
+#iz kje in zakaj prihajajo tujci zivet v slovenijo
+data <- read_csv2("podatki/tujci.namen.csv",locale=locale(encoding="Windows-1250"), skip = 2, na=c("", "...", "z") )%>%
   rename(drzava=`DRŽAVA DRŽAVLJANSTVA`) %>%
   gather(key="leto.namen", value="stevilo", -drzava) %>%
   separate(leto.namen, c("leto", "namen"), "(?<=[0-9]) ") %>%
   mutate(leto=parse_number(leto))
 
-
-data1 <- read_csv2("podatki/ods_st_akt.csv",locale=locale(encoding="Windows-1250"), skip = 2, na=c("", "...") )
-  colnames(data1)[2] <- "drzava.prihodnjega.bivalisca" %>%
-  gather(key="leto.status", value="stevilo", -drzava.prihodnjega.bivalisca) %>%
+#odseljeni glede na status aktivnosti
+data1 <- read_csv2("podatki/ods_st_akt.csv",locale=locale(encoding="Windows-1250"), skip = 2, na=c("", "...") )%>%
+  rename(drzava.prihodnjega.bivalisca=`DRŽAVA PRIHODNJEGA PREBIVALIŠČA`) %>%
+  gather(key="leto.status", value="stevilo", -SPOL, -drzava.prihodnjega.bivalisca) %>%
   separate(leto.status, c("leto","status"), "(?<=[0-9]) ") %>%
   mutate(leto=parse_number(leto))
 
+
+#notranje selive po regijah
 data2 <- read_csv2("podatki/notranje.selitve.csv",locale=locale(encoding="Windows-1250"), skip = 2,  na=c("", "..."))
-    colnames(data2)[1] <- "regija" %>%
-    gather(key="leto.regija", value="stevilo", -regija) %>%
-    separate(leto.regijav, c("leto", "regijav"), "(?<=[0-9]) ") %>%
-    mutate(leto=parse_number(leto))
+colnames(data2)[1] <- "regija"
+data2 <- data2 %>%
+  gather(key="leto.regijav", value="stevilo", -regija) %>%
+  separate(leto.regijav, c("leto", "regijav"), "(?<=[0-9]) ") %>%
+  mutate(leto=parse_number(leto),
+         regija=gsub("e( |$)", "a\\1", regija) %>% substring(3),
+         regijav=gsub("o( |$)", "a\\1", regijav) %>% substring(2))
 
-
-data3 <- read_csv2("podatki/pris.odselj.csv",locale=locale(encoding="Windows-1250"), skip = 2, na=c("", "...")) 
-      rename(drzava = `DRŽAVA DRŽAVLJANSTVA`) 
-      #gather(key = "leto.spol", value = "stevilo", -drzava) %>%
-      #separate(leto.spol, c("leto", "spol"), "(?<=[0-9]) ") %>%
-      #mutate(leto=parse_number(leto))
+#priseljevanje in odseljevanje po spolu in drzavljanstvu
+data3 <- read_csv2("podatki/pris.odselj.csv",locale=locale(encoding="Windows-1250"), skip = 2, na=c("", "...")) %>%
+      rename(drzava = `DRŽAVA DRŽAVLJANSTVA`) %>%
+      gather(key = "leto.spol", value = "stevilo", -drzava, -SELITVE) %>%
+      separate(leto.spol, c("leto", "spol"), "(?<=[0-9]) ") %>%
+      mutate(leto=parse_number(leto))
 
 
 
